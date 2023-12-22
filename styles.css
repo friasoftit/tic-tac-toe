@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    max-width: 300px;
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #ecf0f1;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Estilo para el jugador X */
+.x {
+    color: #0e4366;
+}
+
+/* Estilo para el jugador O */
+.o {
+    color: #e74c3c;
+}
+
+.cell:hover {
+    background-color: #2980b9;
+}
+
+
+.status {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.difficulty-select {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.difficulty-select label {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.difficulty-select select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
